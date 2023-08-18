@@ -1,0 +1,126 @@
+*{
+          margin: 0px;
+          padding: 0px;
+}
+header{
+          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bridge.jpg');
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+}
+ul{
+          float: left;
+          list-style-type: none;
+          margin-top: 15px;
+          padding-left: 8px;
+}
+li{
+          display: inline;
+}
+a{
+          text-decoration: none;
+          color: aliceblue;
+          font-size: 14px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding: 4px;
+          border: 1.5px solid transparent;
+          border-radius: 9px;
+}
+a:hover{
+          background-color: transparent;
+          color: aquamarine;
+          text-decoration: white underline;
+          font-size: 20px;
+          transition: 0.6s ease-in;
+}
+.active1{
+          color: rgb(0, 255, 76);  
+          font-size: 20px;
+          text-decoration: underline;
+}
+.logo img{
+          float: right;
+          width: 60px;
+          height: auto;
+}
+.sign{
+          position: absolute;
+          top: 3.5%;
+          left: 91%;
+          transform: translate(-50%,-50%);
+}
+.sign a{
+          font-size: large;
+          border: 2px solid wheat;
+}
+.sign a:hover{
+          color: aqua;
+          text-decoration: none;
+}
+.main{
+          max-width: 1200px;
+          margin: auto;
+}
+.title{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+}
+h1{
+          font-size: 70px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+          color: rgba(251, 255, 3, 0.904);
+}
+span{
+          color: rgb(17, 16, 16);
+          font-size: 70px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.button{
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%,-50%);    
+          padding: 10px;
+}
+.btn{
+          border: transparent;
+          border-radius: 10px;
+          background: black;
+          color: whitesmoke;
+          font-size: medium;
+          font-family: fantasy;
+          padding: 10px;
+          cursor: pointer;
+          transition: color 0.4s linear;
+          position: relative;
+}
+.btn:hover{
+          color: rgb(255, 251, 0);
+}
+.btn::before{
+          content:"";
+          position:absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgb(255, 251, 0);
+          z-index: -1;
+          transition: transform 0.5s;
+          transform-origin: 0 0;
+          transition-timing-function: (0,5,1,6,0,4,0.7);
+}
+.btn1::before{
+          transform: scaleY(0);
+}
+.btn2::before{
+          transform: scaleY(0);
+}
+.btn1:hover::before{
+          transform: scaleY(1);
+}
+.btn2:hover::before{
+          transform: scaleY(1);
+}
